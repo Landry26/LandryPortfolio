@@ -1,24 +1,25 @@
 <?php
-//appel à la fonction de connexion avec la base de données
-require_once('config.php');
-try{
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "portfolio";
 
-    if(isset($_POST['Mail'])){
-      
-        //requete d'insertion des informations dans la base de données
-        $sql="INSERT INTO visiteurs (Noms, Mail, msg)
-        VALUES 
-        
-        ('".$_POST['Noms']."','".$_POST['Mail']."','".$_POST['msg']."')";
-        
-        $resultat=$conn->exec($sql);
-        //affichage de résultats de la requete
-        header('Location:index.htm?enregistrement réussi');
-        }
-        else{
-            echo" enregistrement échoué";
-        }
-        
-    }
+$conn = new mysqli("mysql:host=localhost;dbname=portfolio", 'root', '');
 
-    catch(Exception $e){ die($e->getMessage()); }
+// Vérifiez la connexion
+if ($conn->connect_error) {
+  die("Erreur de connexion à la base de données : " . $conn->connect_error);
+}
+
+// Insérez les données dans la table appropriée
+$sql = "INSERT INTO visiteurs (nom, email, msg) VALUES ('$nom', '$email','$msg')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Données insérées avec succès.";
+} else {
+  echo "Erreur lors de l'insertion des données : " . $conn->error;
+}
+
+// Fermez la connexion à la base de données
+$conn->close();
+?>
