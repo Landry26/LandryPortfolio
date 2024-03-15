@@ -14,13 +14,13 @@
        <div class="header-content">
             <h4 class="header-subtitle">Bonjour, Je suis</h4>
             <h1 class="myname">Landry Jovial PANGU</h1>
-            <span class="header-mono">Data analyst | Développeur Junior </span>
+            <span class="header-mono">Analyste programmeur | Data analyst | Développeur Junior </span>
         </div>  
    </header>
     <!-- fin header -->
 
     <!-- début navbar -->
-    <div class="navbar navbar-expand-lg bg-white pb-5">
+    <div class="navbar navbar-expand-md bg-white pb-5">
         <nav class="navMenu navbar-collapse">
             <ul>
                 <li class ="nav-item"><a href="index.htm" style="text-decoration:none;color:#111;font-weight:300;font-size:1em;padding:25px;font:bolder">Accueil</a></li>
@@ -239,15 +239,15 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Laissez-moi un message</h4>
-                        <form action="#" method="post">
+                        <form action="scripts/php/insert.php" method="post">
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Votre nom *" required>
+                                <input  class="form-control" type="text" name="Noms" placeholder="Votre nom *" required>
                             </div> <br>
                             <div class="form-group">
-                                <input  class="form-control" type="email" placeholder="Votre adresse mail *" required>
+                                <input  class="form-control" type="email" name="Mail" placeholder="Votre adresse mail *" required>
                             </div> <br>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Insérez votre message ici" rows="7" required></textarea>
+                                <textarea class="form-control" name="msg" placeholder="Insérez votre message ici" rows="7" required></textarea>
                             </div> <br>
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-danger">Envoyer message</button>
@@ -275,6 +275,12 @@
                             <span class="text-muted">Landpangu21@gmail.com</span>
                         </div>
                     </div>
+                    <div class="row mb-2">
+                        <div class="col-10">
+                            <h6 class="d-inline">Voir mon CV</h6><br>
+                            <span class="text-muted"><iframe src="document/CV_LANDRYPANGU.pdf" frameborder="0"></iframe></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,5 +292,10 @@
         <p class="small mb-0 text-light">© 2024</p>
     </footer>
     <!-- fin footer -->
+    
+    <script src="scripts/js/bootstrap.min.js"></script>
+    <script src="scripts/js/jquery.js"></script>
+    <script src="scripts/json/portfolio.json"></script>
+    
 </body>
 </html>

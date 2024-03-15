@@ -1,0 +1,35 @@
+{
+    "nom": "Landry Pangu",
+    "titre": "Développeur Web | Data Analyst | Analyste programmeur",
+    "description": "Je suis un développeur passionné par la création de sites web interactifs et conviviaux.",
+    "projets": [
+      
+      {
+        "titre": "Portfolio personnel",
+        "description": "Ce portfolio que vous consultez actuellement a été développé pour présenter mes compétences, mes projets et mon expérience professionnelle.",
+        "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Json"]
+      }
+    ],
+    "competences": [
+      {
+        "nom": "HTML",
+        "niveau": "Avancé"
+      },
+      {
+        "nom": "CSS",
+        "niveau": "Avancé"
+      },
+      {
+        "nom": "JavaScript",
+        "niveau": "Faible"
+      },
+      {
+        "nom": "PHP",
+        "niveau": "Intermédiaire"
+      },
+      {
+        "nom": "Json",
+        "niveau": "Faible"
+      }
+    ]
+  }

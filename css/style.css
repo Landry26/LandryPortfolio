@@ -111,7 +111,11 @@ ol, ul{
     padding: 10px;
     opacity: 0.8;
     box-sizing: border-box;
-
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter:blur(10px);
+    -o-backdrop-filter:blur(10px);
 }
 
 .header .header-content{
@@ -119,6 +123,11 @@ ol, ul{
     margin-left: 95px;
     padding: 20px;
     position: absolute;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter:blur(10px);
+    -o-backdrop-filter:blur(10px);
 }
 
 .header .header-content *{
@@ -131,6 +140,7 @@ ol, ul{
     padding: 20px;
     height: 5vh;
     background-color: #f8f9fa;
+    display: block;
 }
 
 .navbar .navMenu{
@@ -147,7 +157,18 @@ ol, ul{
     display: inline-flex;
  }
 
- .navbar .navMenu .avatar{
+ .navbar .navMenu .nav-item{
+    font-size: 1em;
+    color: #212529;
+}
+
+.navbar .navMenu .nav-item a:hover{
+    font-size: 1em;
+    color: #212529;
+    cursor: pointer;
+}
+
+.navbar .navMenu .avatar{
     height: 50%;
     width: 90%;
     margin-top: 100px;
@@ -168,8 +189,8 @@ ol, ul{
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
