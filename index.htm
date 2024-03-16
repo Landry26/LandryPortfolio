@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="images/profil.PNG" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8CL8R55R1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y8CL8R55R1');
+        </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- débutt header -->
@@ -237,7 +246,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="contact-form-card">
+                    <div class="contact-form-card" id="monformulaire">
                         <h4 class="contact-title">Laissez-moi un message</h4>
                         <form action="scripts/php/insert.php" method="post">
                             <div class="form-group">
@@ -293,6 +302,8 @@
     </footer>
     <!-- fin footer -->
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/js/crypto-js.js"></script>
     <script src="scripts/js/bootstrap.min.js"></script>
     <script src="scripts/js/jquery.js"></script>
     <script src="scripts/json/portfolio.json"></script>
