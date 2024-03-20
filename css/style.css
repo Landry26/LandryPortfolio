@@ -120,7 +120,7 @@ ol, ul{
 
 .header .header-content{
     margin-top: 85px;
-    margin-left: 95px;
+    margin-left: 85px;
     padding: 20px;
     position: absolute;
     backdrop-filter: blur(10px);
@@ -215,19 +215,31 @@ ol, ul{
     .container-fluid {
       max-width: 720px;
     }
-  }
+}
   
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .container-fluid {
       max-width: 960px;
     }
-  }
+}
   
   @media (min-width: 1200px) {
     .container-fluid {
       max-width: 1140px;
     }
-  }
+}
+
+.slideshow {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
 
 .footer{
     background-color: #212529;
